@@ -5,9 +5,9 @@
   /*안쪽 여백 : 0*/
   box-sizing: border-box;
   /*테두리 두께 무시*/
-
-  
-
+}
+html{
+  scroll-behavior: smooth;
 }
 
 a {
@@ -140,6 +140,28 @@ li {
   color: black;
 }
 
+.mouse{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  animation: mouse 1s infinite;
+}
+@keyframes mouse{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+
+
+
 
 .about{
   width: 1200px;
@@ -202,4 +224,392 @@ li {
   font-size: 50px;
   color: rgb(224, 143, 224) ;
   margin-right: 10px;
+}
+
+
+.skills{
+  background-color: #eee;
+  width: 100%;
+  height: 700px;
+
+  margin-top: 100px;
+  padding-top: 100px;
+
+}
+.skills h2{
+  font-size: 40px;
+  color: #ff6a6a;
+
+}
+.skills h1{
+  font-size: 50px;
+
+}
+.skills-inner{
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+
+
+}
+.skills .contents{
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 50px;
+
+}
+.skills .contents li{
+
+  width: 350px;
+  height: 350px;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+
+  padding: 20px;
+
+  transition: 0.3s;
+
+}
+.skills h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+
+
+}
+.skills i{
+  color: #ff6a6a;
+  font-size: 40px;
+}
+.skills .contents li:hover{
+  background-color: #ff6a6a;
+  color: white;
+  border-radius: 15px;
+
+}
+.skills .contents li:hover i{
+  color: white;
+}
+
+.bg{
+  width: 100%;
+  height: 700px;
+  background: url(bg2.jpg) no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+* {
+  margin: 0;
+  /*바깥쪽 여백 : 0*/
+  padding: 0;
+  /*안쪽 여백 : 0*/
+  box-sizing: border-box;
+  /*테두리 두께 무시*/
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  /*밑줄 없애기*/
+  display: block;
+  /*a태그를 블록요소로*/
+  color: black;
+  /*글자색 : 블랙*/
+}
+
+li {
+  list-style-type: none;
+  /*li태그 기호 제거*/
+}
+
+.container {
+  width: 100%;
+  /*가로길이 : 100%*/
+  height: 1200px;
+  /*세로길이 : 1200px*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg) no-repeat;
+  background-size: cover;
+
+  color: white;
+
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  /*자식 요소들을 가로 배치*/
+  justify-content: space-between;
+  /*가로로 어떻게 배치할지 : space-between*/
+  align-items: center;
+  /*세로로 어떻게 배치할지 : center*/
+
+}
+
+.logo {
+  width: 200px;
+  height: 80px;
+
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #ff6a6a;
+
+}
+
+.menu {
+  width: 400px;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  width: 25%;
+  text-align: center;
+  /*글자를 가운데 정렬*/
+
+}
+
+.menu li a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff6a6a;
+}
+
+.main {
+  width: 1000px;
+  height: 600px;
+
+  margin: 0 auto;
+  /*블럭요소를 가운데로 배치*/
+  margin-top: 200px;
+  /*바깥쪽 위쪽 여백 : 200px*/
+
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.main h2 {
+  font-size: 40px;
+
+}
+
+.main h3 {
+  font-size: 30px;
+  font-weight: normal;
+
+  margin-bottom: 50px;
+}
+
+.main button {
+  font-size: 30px;
+
+  width: 250px;
+  height: 90px;
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+
+  color: white;
+  transition: 0.3s;
+}
+
+.main button:hover {
+  background-color: white;
+  color: black;
+}
+
+.mouse{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  animation: mouse 1s infinite;
+}
+@keyframes mouse{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+
+
+
+
+.about{
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+
+  margin-top: 100px;
+
+}
+.about h2{
+  font-size: 40px;
+  color: #ff6a6a;
+}
+.about h1{
+  font-size: 50px;
+}
+.about .contents{
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  margin-top: 50px;
+}
+.about .left{
+  width: 400px;
+  height: 500px;
+}
+.about .left img{
+  width: 400px;
+  height: 600px;
+
+}
+.about .right{
+  width: 800px;
+  height: 500px;
+  
+  padding-left: 50px;
+}
+.about .right h1{
+  font-size: 30px;
+}
+.about .right span{
+  color: #ff6a6a;
+}
+.about .right li{
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.fa-facebook{
+  font-size: 50px;
+  color: #3b5998 ;
+  margin-right: 10px;
+}
+.fa-youtube{
+  font-size: 50px;
+  color: red;
+  margin-right: 10px;
+}
+.fa-instagram{
+  font-size: 50px;
+  color: rgb(224, 143, 224) ;
+  margin-right: 10px;
+}
+
+
+.skills{
+  background-color: #eee;
+  width: 100%;
+  height: 700px;
+
+  margin-top: 100px;
+  padding-top: 100px;
+
+}
+.skills h2{
+  font-size: 40px;
+  color: #ff6a6a;
+
+}
+.skills h1{
+  font-size: 50px;
+
+}
+.skills-inner{
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+
+
+}
+.skills .contents{
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 50px;
+
+}
+.skills .contents li{
+
+  width: 350px;
+  height: 350px;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+
+  padding: 20px;
+
+  transition: 0.3s;
+
+}
+.skills h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+
+
+}
+.skills i{
+  color: #ff6a6a;
+  font-size: 40px;
+}
+.skills .contents li:hover{
+  background-color: #ff6a6a;
+  color: white;
+  border-radius: 15px;
+
+}
+.skills .contents li:hover i{
+  color: white;
+}
+
+.bg{
+  width: 100%;
+  height: 700px;
+  background: url(bg2.jpg) no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+
+.project{
+  
+
 }
